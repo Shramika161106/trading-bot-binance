@@ -1,0 +1,13 @@
+2025-05-20 10:15:44 | INFO     | logging_config | Logger initialised. Log file: logs/trading_bot_20250520.log
+2025-05-20 10:15:44 | INFO     | client | BinanceClient initialised (Testnet).
+2025-05-20 10:15:44 | DEBUG    | validators | Symbol validated: BTCUSDT
+2025-05-20 10:15:44 | DEBUG    | validators | Side validated: SELL
+2025-05-20 10:15:44 | DEBUG    | validators | Order type validated: LIMIT
+2025-05-20 10:15:44 | DEBUG    | validators | Quantity validated: 0.001
+2025-05-20 10:15:44 | DEBUG    | validators | Price validated: 100000.0
+2025-05-20 10:15:44 | INFO     | orders | Limit order request — symbol=BTCUSDT, side=SELL, qty=0.001, price=100000.0
+2025-05-20 10:15:44 | INFO     | client | Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC'}
+2025-05-20 10:15:44 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1716192944812}
+2025-05-20 10:15:45 | DEBUG    | client | HTTP 200 | body: {"orderId":3280558901,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"web_def456","price":"100000","avgPrice":"0","origQty":"0.001","executedQty":"0.000","cumQty":"0.000","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","side":"SELL"}
+2025-05-20 10:15:45 | INFO     | client | Order response: {'orderId': 3280558901, 'symbol': 'BTCUSDT', 'status': 'NEW', 'price': '100000', 'avgPrice': '0', 'origQty': '0.001', 'executedQty': '0.000', 'type': 'LIMIT', 'side': 'SELL', 'timeInForce': 'GTC'}
+2025-05-20 10:15:45 | INFO     | cli | Order placed successfully.

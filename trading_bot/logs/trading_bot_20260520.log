@@ -1,0 +1,25 @@
+2026-05-20 16:41:39 | INFO     | logging_config | Logger initialised. Log file: logs\trading_bot_20260520.log
+2026-05-20 16:41:40 | DEBUG    | validators | Symbol validated: BTCUSDT
+2026-05-20 16:41:40 | DEBUG    | validators | Side validated: BUY
+2026-05-20 16:41:40 | DEBUG    | validators | Order type validated: MARKET
+2026-05-20 16:41:40 | DEBUG    | validators | Quantity validated: 0.001
+2026-05-20 16:41:40 | INFO     | client | BinanceClient initialised (Testnet).
+2026-05-20 16:41:40 | INFO     | orders | Market order request — symbol=BTCUSDT, side=BUY, qty=0.001
+2026-05-20 16:41:40 | INFO     | client | Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-05-20 16:41:40 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1779275500014}
+2026-05-20 16:41:41 | DEBUG    | client | HTTP 401 | body: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-20 16:41:41 | ERROR    | client | HTTP error 401: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-20 16:41:41 | ERROR    | cli | Order failed: Binance API error 401: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-20 16:41:59 | INFO     | logging_config | Logger initialised. Log file: logs\trading_bot_20260520.log
+2026-05-20 16:41:59 | DEBUG    | validators | Symbol validated: BTCUSDT
+2026-05-20 16:41:59 | DEBUG    | validators | Side validated: SELL
+2026-05-20 16:41:59 | DEBUG    | validators | Order type validated: LIMIT
+2026-05-20 16:41:59 | DEBUG    | validators | Quantity validated: 0.001
+2026-05-20 16:41:59 | DEBUG    | validators | Price validated: 100000.0
+2026-05-20 16:41:59 | INFO     | client | BinanceClient initialised (Testnet).
+2026-05-20 16:41:59 | INFO     | orders | Limit order request — symbol=BTCUSDT, side=SELL, qty=0.001, price=100000.0
+2026-05-20 16:41:59 | INFO     | client | Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC'}
+2026-05-20 16:41:59 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1779275519456}
+2026-05-20 16:42:01 | DEBUG    | client | HTTP 401 | body: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-20 16:42:01 | ERROR    | client | HTTP error 401: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-20 16:42:01 | ERROR    | cli | Order failed: Binance API error 401: {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}

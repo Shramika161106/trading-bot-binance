@@ -1,0 +1,12 @@
+2025-05-20 10:12:01 | INFO     | logging_config | Logger initialised. Log file: logs/trading_bot_20250520.log
+2025-05-20 10:12:01 | INFO     | client | BinanceClient initialised (Testnet).
+2025-05-20 10:12:01 | DEBUG    | validators | Symbol validated: BTCUSDT
+2025-05-20 10:12:01 | DEBUG    | validators | Side validated: BUY
+2025-05-20 10:12:01 | DEBUG    | validators | Order type validated: MARKET
+2025-05-20 10:12:01 | DEBUG    | validators | Quantity validated: 0.001
+2025-05-20 10:12:01 | INFO     | orders | Market order request — symbol=BTCUSDT, side=BUY, qty=0.001
+2025-05-20 10:12:01 | INFO     | client | Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2025-05-20 10:12:01 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1716192721543}
+2025-05-20 10:12:02 | DEBUG    | client | HTTP 200 | body: {"orderId":3280557246,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"web_abc123","price":"0","avgPrice":"65123.40","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"65.12340","timeInForce":"GTC","type":"MARKET","side":"BUY"}
+2025-05-20 10:12:02 | INFO     | client | Order response: {'orderId': 3280557246, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'avgPrice': '65123.40', 'origQty': '0.001', 'executedQty': '0.001', 'type': 'MARKET', 'side': 'BUY'}
+2025-05-20 10:12:02 | INFO     | cli | Order placed successfully.
